@@ -1,0 +1,9 @@
+version: '2'
+services:
+  znc:
+    build: ./znc-build/
+    volumes:
+      - ./znc-data:/znc-data
+    user: znc
+    ports:
+      - "6667:6667"
